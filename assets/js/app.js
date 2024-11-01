@@ -1,54 +1,234 @@
 var volume, audio, currentPlaying, buttonIcon, isPaused;
 
 var playlist = {
-	bitconneeect: function() {
-		audio = new Audio('assets/audio/bitconneeect.mp3');
-	}, 
-	soMuchMoney: function() {
-		audio = new Audio('assets/audio/soMuchMoney.mp3');
-	}, 
-	excited: function() {
-		audio = new Audio('assets/audio/excited.mp3');
-	}, 
-	heheheey: function() {
-		audio = new Audio('assets/audio/heheheey.mp3');
-	}, 
-	mmhmmhnonono: function() {
-		audio = new Audio('assets/audio/mmhmmhnonono.mp3');
-	}, 
-	toTheBank: function() {
-		audio = new Audio('assets/audio/toTheBank.mp3');
-	}, 
-	independently: function() {
-		audio = new Audio('assets/audio/independently.mp3');
-	}, 
-	loooooooove: function() {
-		audio = new Audio('assets/audio/loooooooove.mp3');
-	}, 
-	mywife: function() {
-		audio = new Audio('assets/audio/mywife.mp3');
-	}, 
-	heyEveryBody: function() {
-		audio = new Audio('assets/audio/heyEveryBody.mp3');
-	}, 
-	thatsaScam: function() {
-		audio = new Audio('assets/audio/thatsaScam.mp3');
-	}, 
-	waves: function() {
-		audio = new Audio('assets/audio/waves.mp3');
-	}, 
-	whaaat: function() {
-		audio = new Audio('assets/audio/whaaat.mp3');
-	}, 
-	whatAmIGonnaDo: function() {
-		audio = new Audio('assets/audio/whatAmIGonnaDo.mp3');
-	}, 
-	whoaThatsReal: function() {
-		audio = new Audio('assets/audio/whoaThatsReal.mp3');
-	}, 
-	wowwowWhatsUp: function() {
-		audio = new Audio('assets/audio/wowwowWhatsUp.mp3');
-	}, 
+	AConArtistGame1: function() {
+		audio = new Audio('assets/audio/AConArtistGame1.mp3');
+	},
+	AConArtistGame2: function() {
+		audio = new Audio('assets/audio/AConArtistGame2.mp3');
+	},
+	AllHeyheyheys: function() {
+		audio = new Audio('assets/audio/AllHeyheyheys.mp3');
+	},
+	BeAScammersGame: function() {
+		audio = new Audio('assets/audio/BeAScammersGame.mp3');
+	},
+	Bitconnect1: function() {
+		audio = new Audio('assets/audio/Bitconnect1.mp3');
+	},
+	Bitconnect2: function() {
+		audio = new Audio('assets/audio/Bitconnect2.mp3');
+	},
+	Bitconnect3: function() {
+		audio = new Audio('assets/audio/Bitconnect3.mp3');
+	},
+	Bitconnect4: function() {
+		audio = new Audio('assets/audio/Bitconnect4.mp3');
+	},
+	Excited: function() {
+		audio = new Audio('assets/audio/Excited.mp3');
+	},
+	FaithAndBelief: function() {
+		audio = new Audio('assets/audio/FaithAndBelief.mp3');
+	},
+	FriendsFromVietnam1: function() {
+		audio = new Audio('assets/audio/FriendsFromVietnam1.mp3');
+	},
+	FriendsFromVietnam2: function() {
+		audio = new Audio('assets/audio/FriendsFromVietnam2.mp3');
+	},
+	FriendsFromVietnam3: function() {
+		audio = new Audio('assets/audio/FriendsFromVietnam3.mp3');
+	},
+	FriendsFromVietnam4: function() {
+		audio = new Audio('assets/audio/FriendsFromVietnam4.mp3');
+	},
+	FriendsFromVietnam5: function() {
+		audio = new Audio('assets/audio/FriendsFromVietnam5.mp3');
+	},
+	GoAllOverTheWorld: function() {
+		audio = new Audio('assets/audio/GoAllOverTheWorld.mp3');
+	},
+	HeyEveryBody1: function() {
+		audio = new Audio('assets/audio/HeyEveryBody1.mp3');
+	},
+	HeyEveryBody2: function() {
+		audio = new Audio('assets/audio/HeyEveryBody2.mp3');
+	},
+	Heyheyhey1: function() {
+		audio = new Audio('assets/audio/Heyheyhey1.mp3');
+	},
+	Heyheyhey2: function() {
+		audio = new Audio('assets/audio/Heyheyhey2.mp3');
+	},
+	Heyheyhey3: function() {
+		audio = new Audio('assets/audio/Heyheyhey3.mp3');
+	},
+	HoneyThisIsReal1: function() {
+		audio = new Audio('assets/audio/HoneyThisIsReal1.mp3');
+	},
+	HoneyThisIsReal2: function() {
+		audio = new Audio('assets/audio/HoneyThisIsReal2.mp3');
+	},
+	IAmFinanciallyIndependently: function() {
+		audio = new Audio('assets/audio/IAmFinanciallyIndependently.mp3');
+	},
+	IAmIndependently: function() {
+		audio = new Audio('assets/audio/IAmIndependently.mp3');
+	},
+	IAmSoExcited1: function() {
+		audio = new Audio('assets/audio/IAmSoExcited1.mp3');
+	},
+	IAmSoExcited2: function() {
+		audio = new Audio('assets/audio/IAmSoExcited2.mp3');
+	},
+	IAmSoExcited3: function() {
+		audio = new Audio('assets/audio/IAmSoExcited3.mp3');
+	},
+	IAmSoHonour: function() {
+		audio = new Audio('assets/audio/IAmSoHonour.mp3');
+	},
+	IAmSoProud: function() {
+		audio = new Audio('assets/audio/IAmSoProud.mp3');
+	},
+	IBelieveThisRoom1: function() {
+		audio = new Audio('assets/audio/IBelieveThisRoom1.mp3');
+	},
+	IBelieveThisRoom2: function() {
+		audio = new Audio('assets/audio/IBelieveThisRoom2.mp3');
+	},
+	Independently: function() {
+		audio = new Audio('assets/audio/Independently.mp3');
+	},
+	ISay: function() {
+		audio = new Audio('assets/audio/ISay.mp3');
+	},
+	ISayWhatAmIGonnaDo: function() {
+		audio = new Audio('assets/audio/ISayWhatAmIGonnaDo.mp3');
+	},
+	IWantToTellYouSomething: function() {
+		audio = new Audio('assets/audio/IWantToTellYouSomething.mp3');
+	},
+	Laugh1: function() {
+		audio = new Audio('assets/audio/Laugh1.mp3');
+	},
+	Laugh2: function() {
+		audio = new Audio('assets/audio/Laugh2.mp3');
+	},
+	Laugh3: function() {
+		audio = new Audio('assets/audio/Laugh3.mp3');
+	},
+	LetMeTellYou1: function() {
+		audio = new Audio('assets/audio/LetMeTellYou1.mp3');
+	},
+	LetMeTellYou2: function() {
+		audio = new Audio('assets/audio/LetMeTellYou2.mp3');
+	},
+	LetMeTellYouILoooooooove: function() {
+		audio = new Audio('assets/audio/LetMeTellYouILoooooooove.mp3');
+	},
+	Loooooooove: function() {
+		audio = new Audio('assets/audio/Loooooooove.mp3');
+	},
+	Mmhmmhnonono: function() {
+		audio = new Audio('assets/audio/Mmhmmhnonono.mp3');
+	},
+	MoneyFromAnotherAccount: function() {
+		audio = new Audio('assets/audio/MoneyFromAnotherAccount.mp3');
+	},
+	MyWife: function() {
+		audio = new Audio('assets/audio/MyWife.mp3');
+	},
+	OnTheTable1: function() {
+		audio = new Audio('assets/audio/OnTheTable1.mp3');
+	},
+	OnTheTable2: function() {
+		audio = new Audio('assets/audio/OnTheTable2.mp3');
+	},
+	OnTheTable3: function() {
+		audio = new Audio('assets/audio/OnTheTable3.mp3');
+	},
+	SoMuchMoney: function() {
+		audio = new Audio('assets/audio/SoMuchMoney.mp3');
+	},
+	ThankYouCarlos: function() {
+		audio = new Audio('assets/audio/ThankYouCarlos.mp3');
+	},
+	ThatsAScam: function() {
+		audio = new Audio('assets/audio/ThatsAScam.mp3');
+	},
+	TheSeed: function() {
+		audio = new Audio('assets/audio/TheSeed.mp3');
+	},
+	TheWorld: function() {
+		audio = new Audio('assets/audio/TheWorld.mp3');
+	},
+	TheWorldIsNotAnymoreTheWayItUsedToBe: function() {
+		audio = new Audio('assets/audio/TheWorldIsNotAnymoreTheWayItUsedToBe.mp3');
+	},
+	ToTheBank1: function() {
+		audio = new Audio('assets/audio/ToTheBank1.mp3');
+	},
+	ToTheBank2: function() {
+		audio = new Audio('assets/audio/ToTheBank2.mp3');
+	},
+	WatsoWatsoWatso: function() {
+		audio = new Audio('assets/audio/WatsoWatsoWatso.mp3');
+	},
+	WatsoWatsoWatsoUp: function() {
+		audio = new Audio('assets/audio/WatsoWatsoWatsoUp.mp3');
+	},
+	WatsoWatsoWatsoUpBitconnect: function() {
+		audio = new Audio('assets/audio/WatsoWatsoWatsoUpBitconnect.mp3');
+	},
+	Waves: function() {
+		audio = new Audio('assets/audio/Waves.mp3');
+	},
+	WeAreBuildingTheEntireWorld: function() {
+		audio = new Audio('assets/audio/WeAreBuildingTheEntireWorld.mp3');
+	},
+	WeAreChangingTheWorld1: function() {
+		audio = new Audio('assets/audio/WeAreChangingTheWorld1.mp3');
+	},
+	WeAreChangingTheWorld2: function() {
+		audio = new Audio('assets/audio/WeAreChangingTheWorld2.mp3');
+	},
+	WeAreStartingToWatchItGoAllOverTheWorld: function() {
+		audio = new Audio('assets/audio/WeAreStartingToWatchItGoAllOverTheWorld.mp3');
+	},
+	WeWillChangeTheWorld: function() {
+		audio = new Audio('assets/audio/WeWillChangeTheWorld.mp3');
+	},
+	Whaaat: function() {
+		audio = new Audio('assets/audio/Whaaat.mp3');
+	},
+	WhatAmIGonnaDo: function() {
+		audio = new Audio('assets/audio/WhatAmIGonnaDo.mp3');
+	},
+	WhoaThatsReal: function() {
+		audio = new Audio('assets/audio/WhoaThatsReal.mp3');
+	},
+	Wow1: function() {
+		audio = new Audio('assets/audio/Wow1.mp3');
+	},
+	Wow2: function() {
+		audio = new Audio('assets/audio/Wow2.mp3');
+	},
+	WowwowWhatsUp: function() {
+		audio = new Audio('assets/audio/WowwowWhatsUp.mp3');
+	},
+	Yes: function() {
+		audio = new Audio('assets/audio/Yes.mp3');
+	},
+	YesThankYouCarlos: function() {
+		audio = new Audio('assets/audio/YesThankYouCarlos.mp3');
+	},
+	YouKnowWhat: function() {
+		audio = new Audio('assets/audio/YouKnowWhat.mp3');
+	},
+	YoureGonnaLoseYourMoney: function() {
+		audio = new Audio('assets/audio/YoureGonnaLoseYourMoney.mp3');
+	},
 }
 
 Player = {
