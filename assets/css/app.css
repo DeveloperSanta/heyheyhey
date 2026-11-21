@@ -24,3 +24,26 @@ button.button {
 .ui.menu {
 	border-radius: 0;
 }
+
+/* Mobile: keep an even gap between every button, including between rows */
+@media only screen and (max-width: 767px) {
+	#player {
+		/* Change this value to adjust the space between buttons.
+		   Each button gets this much above and below, so the visible gap is double. */
+		--button-gap: 1rem;
+	}
+
+	#player .ui.stackable.grid {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	#player .ui.stackable.grid > .row > .column {
+		padding-top: var(--button-gap) !important;
+		padding-bottom: var(--button-gap) !important;
+	}
+
+	#player button.button {
+		margin: 0 !important;
+	}
+}
